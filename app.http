@@ -1,0 +1,46 @@
+POST http://localhost:3006/register 
+Content-Type: application/json 
+
+{
+    "username":"praneethanxtwave",
+    "name":"praneetha",
+    "password":"praneethanxtwave@2021",
+    "gender":"Female",
+    "location":"Hyderabad"
+}
+
+### 
+POST http://localhost:3006/login 
+Content-Type:application/json 
+
+{
+    "username":"adityagoel",
+    "password":"adityagoel@2023"
+}
+
+###
+GET http://localhost:3006/todos 
+
+### 
+POST http://localhost:3006/todos 
+Content-Type: application/json 
+
+{
+    "userId":1,
+    "description":"CONDUCTING SEMINARS",
+    "status":"TO DO"
+}
+
+###
+PUT http://localhost:3006/todos/4
+Content-Type:appliaction/json 
+
+{
+    "userId":4,
+    "description":"EXPLANING ABOUT HTML",
+    "status":"IN PROGRESS"
+}
+
+### 
+
+DELETE http://localhost:3006/todos/10 
